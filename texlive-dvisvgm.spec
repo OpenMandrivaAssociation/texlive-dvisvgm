@@ -15,7 +15,7 @@ Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvisvgm.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvisvgm.doc.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
-Requires(post):	texlive-tlpkg
+Requires(pre):	texlive-tlpkg
 Requires:	texlive-dvisvgm.bin
 Conflicts:	texlive-texmf <= 20110705-3
 Conflicts:	texlive-doc <= 20110705-3
