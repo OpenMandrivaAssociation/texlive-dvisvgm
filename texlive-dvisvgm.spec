@@ -6,7 +6,7 @@
 # catalog-version 1.0.5
 Name:		texlive-dvisvgm
 Version:	1.0.5
-Release:	1
+Release:	2
 Summary:	Converts DVI files to Scalable Vector Graphics format (SVG)
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/dviware/dvisvgm
