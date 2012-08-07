@@ -1,12 +1,12 @@
-# revision 23089
+# revision 26885
 # category TLCore
 # catalog-ctan /dviware/dvisvgm
-# catalog-date 2011-05-18 22:35:17 +0200
+# catalog-date 2011-12-20 12:24:43 +0100
 # catalog-license gpl
-# catalog-version 1.0.5
+# catalog-version 1.0.10
 Name:		texlive-dvisvgm
-Version:	1.0.5
-Release:	2
+Version:	1.0.10
+Release:	1
 Summary:	Converts DVI files to Scalable Vector Graphics format (SVG)
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/dviware/dvisvgm
