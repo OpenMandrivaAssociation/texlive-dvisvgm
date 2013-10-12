@@ -1,13 +1,13 @@
-# revision 26885
+# revision 29764
 # category TLCore
 # catalog-ctan /dviware/dvisvgm
-# catalog-date 2011-12-20 12:24:43 +0100
+# catalog-date 2013-03-04 12:33:38 +0100
 # catalog-license gpl
-# catalog-version 1.0.10
+# catalog-version 1.2
 Name:		texlive-dvisvgm
-Version:	1.0.10
+Version:	1.2.0
 Release:	1
-Summary:	Converts DVI files to Scalable Vector Graphics format (SVG)
+Summary:	Convert DVI files to Scalable Vector Graphics format (SVG)
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/dviware/dvisvgm
 License:	GPL
@@ -20,17 +20,22 @@ Requires:	texlive-dvisvgm.bin
 
 %description
 Dvisvgm is a command line utility that converts TeX DVI files
-to the XML-based Scalable Vector Graphics format. The current
-version provides basic conversion functionality; development of
-an improved version continues. Users will need a working TeX
-installation including the kpathsea library and Type 1 versions
-of the fonts used in the DVI file. Dvisvgm has been
-successfully tested .
+to the XML-based Scalable Vector Graphics (SVG) format. It
+provides full full font support including virtual fonts, font
+maps, and sub-fonts. If necessary, dvisvgm vectorizes
+Metafont's bitmap output in order to always create lossless
+scalable output. The embedded SVG fonts can optionally be
+replaced with graphics paths so that applications that don't
+support SVG fonts are enabled to render the graphics properly.
+Besides many other features, dvisvgm also supports color,
+emTeX, tpic, PDF mapfile and PostScript specials. Users will
+need a working TeX installation including the kpathsea library.
+For more detailed information, see the project page.
 
 #-----------------------------------------------------------------------
 %files
 %doc %{_mandir}/man1/dvisvgm.1*
-%doc %{_texmfdir}/doc/man/man1/dvisvgm.man1.pdf
+%doc %{_texmfdistdir}/doc/man/man1/dvisvgm.man1.pdf
 
 #-----------------------------------------------------------------------
 %prep
@@ -40,24 +45,6 @@ successfully tested .
 
 %install
 mkdir -p %{buildroot}%{_datadir}
-cp -fpar texmf %{buildroot}%{_datadir}
+cp -fpar texmf-dist %{buildroot}%{_datadir}
 mkdir -p %{buildroot}%{_mandir}/man1
-mv %{buildroot}%{_texmfdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
-
-
-%changelog
-* Tue Aug 07 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0.10-1
-+ Revision: 812242
-- Update to latest release.
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0.5-2
-+ Revision: 751245
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.0.5-1
-+ Revision: 718288
-- texlive-dvisvgm
-- texlive-dvisvgm
-- texlive-dvisvgm
-- texlive-dvisvgm
-
+mv %{buildroot}%{_texmfdistdir}/doc/man/man1/*.1 %{buildroot}%{_mandir}/man1
