@@ -1,12 +1,12 @@
-# revision 29764
+# revision 33825
 # category TLCore
 # catalog-ctan /dviware/dvisvgm
-# catalog-date 2013-03-04 12:33:38 +0100
+# catalog-date 2014-04-27 12:29:14 +0200
 # catalog-license gpl
-# catalog-version 1.2
+# catalog-version 1.6
 Name:		texlive-dvisvgm
-Version:	1.2.0
-Release:	6
+Version:	1.6.0
+Release:	1
 Summary:	Convert DVI files to Scalable Vector Graphics format (SVG)
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/dviware/dvisvgm
@@ -21,16 +21,16 @@ Requires:	texlive-dvisvgm.bin
 %description
 Dvisvgm is a command line utility that converts TeX DVI files
 to the XML-based Scalable Vector Graphics (SVG) format. It
-provides full full font support including virtual fonts, font
-maps, and sub-fonts. If necessary, dvisvgm vectorizes
-Metafont's bitmap output in order to always create lossless
-scalable output. The embedded SVG fonts can optionally be
-replaced with graphics paths so that applications that don't
-support SVG fonts are enabled to render the graphics properly.
-Besides many other features, dvisvgm also supports color,
-emTeX, tpic, PDF mapfile and PostScript specials. Users will
-need a working TeX installation including the kpathsea library.
-For more detailed information, see the project page.
+provides full font support including virtual fonts, font maps,
+and sub-fonts. If necessary, dvisvgm vectorizes Metafont's
+bitmap output in order to always create lossless scalable
+output. The embedded SVG fonts can optionally be replaced with
+graphics paths so that applications that don't support SVG
+fonts are enabled to render the graphics properly. Besides many
+other features, dvisvgm also supports color, emTeX, tpic, PDF
+mapfile and PostScript specials. Users will need a working TeX
+installation including the kpathsea library. For more detailed
+information, see the project page.
 
 #-----------------------------------------------------------------------
 %files
