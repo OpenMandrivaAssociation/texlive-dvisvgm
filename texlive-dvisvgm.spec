@@ -5,7 +5,7 @@
 # catalog-license gpl
 # catalog-version 1.6
 Name:		texlive-dvisvgm
-Version:	2.3
+Version:	2.3.5
 Release:	1
 Summary:	Convert DVI files to Scalable Vector Graphics format (SVG)
 Group:		Publishing
