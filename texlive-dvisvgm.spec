@@ -1,18 +1,12 @@
-# revision 33825
-# category TLCore
-# catalog-ctan /dviware/dvisvgm
-# catalog-date 2014-04-27 12:29:14 +0200
-# catalog-license gpl
-# catalog-version 1.6
 Name:		texlive-dvisvgm
-Version:	2.7
+Version:	64182
 Release:	1
 Summary:	Convert DVI files to Scalable Vector Graphics format (SVG)
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/dviware/dvisvgm
 License:	GPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvisvgm.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvisvgm.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvisvgm.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvisvgm.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -39,7 +33,7 @@ information, see the project page.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
