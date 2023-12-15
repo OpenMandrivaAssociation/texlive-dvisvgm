@@ -1,5 +1,5 @@
 Name:		texlive-dvisvgm
-Version:	67573
+Version:	68950
 Release:	1
 Summary:	Convert DVI files to Scalable Vector Graphics format (SVG)
 Group:		Publishing
