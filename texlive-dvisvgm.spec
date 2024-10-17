@@ -3,7 +3,7 @@ Version:	70501
 Release:	1
 Summary:	Convert DVI files to Scalable Vector Graphics format (SVG)
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/dviware/dvisvgm
+URL:		https://www.ctan.org/tex-archive/dviware/dvisvgm
 License:	GPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvisvgm.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/dvisvgm.doc.r%{version}.tar.xz
